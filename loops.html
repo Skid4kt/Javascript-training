@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="loops.js"></script>
+    <script>
+        console.log(population)
+        let zero=[]
+        let fifty=[]
+        let hundred=[]
+        for (p = 0; p < population.length; p++) {
+
+
+            console.log(population[p].population)
+                pop=population[p].population
+                     
+ if (pop>=0 && pop<=50000000) {
+        zero.push(pop)
+
+            }
+            else if (pop>50000000 && pop<=100000000){
+                fifty.push(pop)
+            }
+            else{
+                hundred.push(pop)
+            }
+        }
+        let pops={
+
+        }
+        pops['0-50m']=zero.length
+        pops['50m-100m']=fifty.length
+        pops['>100m']=hundred.length
+console.log(pops)
+
+    </script>
+
+</body>
+
+</html>
